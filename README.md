@@ -10,7 +10,7 @@ Please click link below:
 
 
 ## Screenshot
-
+https://github.com/TerryKor/Work-Day-Schedule/blob/main/Assets/05-third-party-apis-homework-demo.gif
 
 ## License
 
