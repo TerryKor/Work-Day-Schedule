@@ -7,6 +7,7 @@ Application shows current month, date, year and local time. It was designed for 
 ## Instalation
 
 Please click link below:
+Your site is live at https://terrykor.github.io/Work-Day-Schedule/
 
 
 ## Screenshot
