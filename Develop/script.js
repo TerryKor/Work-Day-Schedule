@@ -6,7 +6,7 @@ $(function () {
   var currentHour= "hour-" + `${moment().format('hh')}`;
   var idList= ["hour-9", "hour-10", "hour-11", "hour-12", "hour-1", "hour-2", "hour-3", "hour-4", "hour-5"] 
   var index=0;
-  
+  //instead of using new variable used every item in the list to traverse
   idList.forEach((item)=>{
   
     descriptionEl.item(idList.indexOf(item)).value = localStorage.getItem(item)
@@ -15,7 +15,7 @@ $(function () {
       index=idList.indexOf(item)
     }
   })
-  
+  // for loop was used to give a class name and to assign a color to the elements
   for(var i=0;i<idList.length;i++){
     if(i<index){
       document.getElementById(idList[i]).className += "past"
@@ -30,6 +30,9 @@ $(function () {
       
     }
   }
+  //map was created to store user data and id of the div
+  //checking by calss name if user clicked on the save button
+  // and saving it to local storage
   var userData = new Map();
   function userInput(event) {
     console.log("class name clicked",event.target.className)
